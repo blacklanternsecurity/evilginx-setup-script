@@ -53,8 +53,9 @@ start()
 
     if [ -z "$TMUX" ]
     then
-        printf "\n [+] Don't forget to start a TMUX session!!\n\n"
-        sleep 7
+        printf "\n[+] Don't forget to start a TMUX session!!\n"
+        printf "[+] Press CTRL+C to cancel or wait 10 seconds\n\n"
+        sleep 10
     fi
 
     . "$HOME/.profile"
