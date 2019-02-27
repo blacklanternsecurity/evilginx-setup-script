@@ -41,7 +41,7 @@ install()
     printf '\n============================================================\n'
     printf '[+] Installing Evilginx2\n'
     printf '============================================================\n\n'
-    go get -v -a -u github.com/blacklanternsecurity/evilginx2
+    go get -v -a -u github.com/kgretzky/evilginx2
     # cd "$GOPATH/src/github.com/kgretzky/evilginx2"
     # make
     # sudo make install
@@ -69,8 +69,8 @@ config
 EOF
 
     sudo "$GOPATH/bin/evilginx2" \
-        -p "$GOPATH/src/github.com/blacklanternsecurity/evilginx2/phishlets" \
-        -rc "$rc_file"
+        -p "$GOPATH/src/github.com/blacklanternsecurity/evilginx2/phishlets"
+        # -rc "$rc_file"
 
 }
 
